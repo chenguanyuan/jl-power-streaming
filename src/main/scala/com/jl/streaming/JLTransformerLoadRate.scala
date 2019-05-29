@@ -38,7 +38,7 @@ import scala.collection.mutable.{HashMap, ListBuffer}
   hadoop fs -touchz /user/hadoop-twq/spark-course/sparkstreaming/stop
   **/
 
-
+//ADASDASDASDASDASDASD
 object JLTransformerLoadRate extends StreamingStopper {
 
   private val logger = Logger.getLogger(JLTransformerLoadRate.getClass)
