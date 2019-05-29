@@ -1,0 +1,22 @@
+(
+mp_id bigint comment '测量点标识',
+time timestamp not null default CURRENT_TIMESTAMP comment '记录时刻',
+loadrate Decimal(8,4) comment '负载率',
+maxpower Decimal(8,4) comment '最大视在功率',
+ZYGGL Decimal(8,4) comment '总有功功率',
+AZXYG Decimal(8,4) comment 'A相有功功率',
+BZXYG Decimal(8,4) comment 'B相有功功率',
+CZXYG Decimal(8,4) comment 'C相有功功率',
+ZWGGL Decimal(8,4) comment '总无功功率',
+AZXWG Decimal(8,4) comment 'A相无功功率',
+BZXWG Decimal(8,4) comment 'B相无功功率',
+CZXWG Decimal(8,4) comment 'C相无功功率',
+SZGL Decimal(8,4) comment '视在功率',
+ASZGL Decimal(8,4) comment 'A相视在功率',
+BSZGL Decimal(8,4) comment 'B相视在功率',
+CSZGL Decimal(8,4) comment 'C相视在功率',
+ZGLYS Decimal(8,4) comment '总功率因数',
+AGLYS Decimal(8,4) comment 'A相功率因数',
+BGLYS Decimal(8,4) comment 'B相功率因数',
+CGLYS Decimal(8,4) comment 'C相功率因数'
+)ENGINE=InnoDB DEFAULT CHARSET=utf8

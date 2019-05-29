@@ -1,0 +1,8 @@
+(
+mp_id bigint comment '测量点标识',
+status int(1) comment '当前状态标, 0表示正常，1表示重载，2表示过载，3表示负载率计算异常，容量为空或最大负荷不能计算，4表示迟到数据',
+overLoadstatus int(1) comment '过载状态标志, 0表示无过载，1表示短时过载，2表示长时过载,3表示短时过载但本次过载曾经出现长时过载情况',
+ts timestamp not null default CURRENT_TIMESTAMP comment '开始时刻',
+te timestamp not null default CURRENT_TIMESTAMP comment '结束时刻',
+td bigint comment '持续时间'
+)ENGINE=InnoDB DEFAULT CHARSET=utf8
